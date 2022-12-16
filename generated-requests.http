@@ -1,0 +1,7 @@
+###
+
+##可以在此处进行执行，也可以在浏览器中请求，但是我们通常使用postman，apifox这类接口测试工具
+GET http://localhost:8081/api/v1/colleges
+
+###
+GET http://localhost:8081/api/v1/test

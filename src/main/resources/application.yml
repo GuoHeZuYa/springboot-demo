@@ -1,0 +1,22 @@
+spring:
+  profiles:
+#    active: prod
+#    active: dev
+    active: local
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 201MB
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 'twt_user'
+    url: jdbc:mysql://101.42.97.58:3306/springboot_demo
+    username: twt_user
+
+mybatis:
+  type-aliases-package: com.example.demo.pojo
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
